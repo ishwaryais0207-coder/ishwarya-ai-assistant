@@ -42,7 +42,7 @@ def load_resources():
 chunks, embedder, index, YOUR_NAME = load_resources()
 
 # Initialize Groq client (reads API key from Streamlit secrets)
-client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+client = Groq(api_key=st.secrets["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"])
 
 # RAG functions
 def retrieve(query, k=4):
@@ -59,7 +59,7 @@ def ask_chatbot(query, chat_history=None):
 
     # Build system prompt
     system_prompt = (
-        f"You are {YOUR_NAME}'s personal AI assistant. "
+        f"You are {ISHWARYA}'s personal AI assistant. "
         f"Your job is to help users learn about {YOUR_NAME}'s background, "
         f"education, skills, projects, experience, achievements, and professional interests. "
         f"Be friendly, natural, helpful, and professional. "
