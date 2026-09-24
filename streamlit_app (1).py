@@ -55,8 +55,7 @@ def ask_chatbot(query, chat_history=None):
     """Main RAG function"""
     # Retrieve relevant chunks
     retrieved = retrieve(query)
-    context = "\n\n---
-\n".join(retrieved)
+    context = "\n\n---\n".join(retrieved)
 
     # Build system prompt
     system_prompt = (
